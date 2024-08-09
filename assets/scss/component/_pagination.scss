@@ -1,0 +1,23 @@
+.pagination{
+  display: flex;
+  justify-content: center;
+}
+.page-item{
+  border: 1px solid $secondary-300;
+  border-right: none;
+  @include sm{
+    display: flex;
+    flex-grow: 1;
+  }
+  &:last-child{
+    border-right: 1px solid $secondary-300;
+  }
+}
+.page-link{
+  width: 100%;
+  padding: 12px 14px;
+  &.active, &:hover{
+    color: $light;
+    background-color: $dark;
+  }
+}

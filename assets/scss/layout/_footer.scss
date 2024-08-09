@@ -1,0 +1,17 @@
+.social{
+  @include sm{
+    gap: 8px;
+  }
+}
+.social-link{
+  width: 48px;
+  height: 48px;
+  @include md{
+    width: 40px;
+    height: 40px;
+  }
+  @include sm{
+    width: 24px;
+    height: 24px;
+  }
+}

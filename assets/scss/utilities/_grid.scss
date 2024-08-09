@@ -1,0 +1,44 @@
+$gap: 24px;
+$columns-num: 12;
+
+.container{
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: calc($gap / 2);
+  padding-right: calc($gap / 2);
+  @include lg{
+    max-width: 720px;
+  }
+  @include sm{
+    max-width: 372px;
+  }
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  /* 抵銷最左邊和最右邊的 col 多出來的 padding */
+  margin-left: calc(-1 * $gap / 2);
+  margin-right: calc(-1 * $gap / 2);
+}
+
+
+@include generate-cols('col', $columns-num, $gap);
+@include lg {
+  @include generate-cols('col-lg', $columns-num, $gap);
+  .container-lg-fluid {
+    @include fluid;
+  }
+} 
+@include md {
+  @include generate-cols('col-md', $columns-num, $gap);
+  .container-md-fluid {
+    @include fluid;
+  }
+} 
+@include sm {
+  @include generate-cols('col-sm', $columns-num, $gap);
+  .container-sm-fluid {
+    @include fluid;
+  }
+} 

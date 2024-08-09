@@ -1,0 +1,42 @@
+.bg-item{
+  width: 50%;
+  height: 296px;
+  @include sm{
+    height: 136px;
+  }
+}
+.bg-optical-left{
+  background-image: url('/assets/images/product-header-1.png');
+  @include lg{
+    background-image: url('/assets/images/product-header-sm-1.png');
+  }
+}
+.bg-optical-right{
+  background-image: url('/assets/images/product-header-2.png');
+  @include lg{
+    background-image: url('/assets/images/product-header-sm-2.png');
+  }
+}
+.bg-sunglasses-left{
+  background-image: url('/assets/images/product-header-3.png');
+  @include lg{
+    background-image: url('/assets/images/product-header-sm-3.png');
+  }
+}
+.bg-sunglasses-right{
+  background-image: url('/assets/images/product-header-4.png');
+  @include lg{
+    background-image: url('/assets/images/product-header-sm-4.png');
+  }
+}
+.color-tag{
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+.color-tag-primary{
+  background-color: #5F3E2D;
+}
+.color-tag-secondary{
+  background-color: #B75929;
+}

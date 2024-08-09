@@ -1,0 +1,31 @@
+.btn{
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+}
+.btn-lg{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  
+}
+.btn-primary-default{
+  background: $primary-default;
+  color: $light;
+  &:hover{
+    background: $primary-darken;
+  }
+}
+.btn-primary-darken{
+  background: $primary-darken;
+  color: $light;
+  &:hover{
+    background: $primary-default;
+  }
+}
+.btn-dark{
+  background: $dark;
+  color: $light;
+  &:hover{
+    background-color: $primary-default;
+  }
+}

@@ -1,0 +1,20 @@
+.breadcrumb{
+  display: flex;
+  flex-wrap: wrap;
+}
+.breadcrumb-item{
+  a:hover{
+    color: $primary-default;
+  }
+  &+.breadcrumb-item{
+    padding-left: 8px;
+    &::before{
+      float: left;
+      padding-right: 8px;
+      content: "/";
+    }
+  }
+  &.active a{
+    color: $primary-default;
+  }
+}

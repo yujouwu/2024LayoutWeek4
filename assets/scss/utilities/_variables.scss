@@ -1,0 +1,71 @@
+$primary-default: #AA0601;
+$primary-darken: #650300;
+$primary-lighten: #FBF2F2;
+
+$secondary-100: #F2F2F2;
+$secondary-200: #707070;
+$secondary-300: #555555;
+$secondary-400: #495057;
+$secondary-500: #212529;
+$secondary-600: #0A0A0A;
+
+
+$dark: #000000;
+$light: #FFFFFF;
+
+$theme-colors: (
+  // key, value
+  "primary-default": $primary-default,
+  "primary-darken": $primary-darken,
+  "primary-lighten": $primary-lighten,
+
+  "secondary-100": $secondary-100,
+  "secondary-200": $secondary-200,
+  "secondary-300": $secondary-300,
+  "secondary-400": $secondary-400,
+  "secondary-500": $secondary-500,
+  "secondary-600": $secondary-600,
+
+  "dark": $dark,
+  "light": $light,
+);
+@each $key, $value in $theme-colors{
+  .text-#{$key} {
+    color: $value;
+  }
+  .text-#{$key}-hover {
+    &:hover{
+      color: $value;
+    }
+  }
+}
+ 
+$fs-1: 14px;
+$fs-2: 16px;
+$fs-3: 18px;
+$fs-4: 20px;
+$fs-5: 24px;
+$fs-6: 32px;
+$fs-7: 36px;
+$fs-8: 42px;
+$fs-9: 48px;
+$fs-10: 64px;
+
+$font-size: (
+  "fs-1": $fs-1,
+  "fs-2": $fs-2,
+  "fs-3": $fs-3,
+  "fs-4": $fs-4,
+  "fs-5": $fs-5,
+  "fs-6": $fs-6,
+  "fs-7": $fs-7,
+  "fs-8": $fs-8,
+  "fs-9": $fs-9,
+  "fs-10": $fs-10,
+);
+
+@each $key, $value in $font-size{
+  .#{$key} {
+    font-size: $value;
+  }
+}

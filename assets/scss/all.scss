@@ -1,0 +1,38 @@
+// google Roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+// google 思源黑體
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+// google icons
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+
+@import './base/reset';
+@import './utilities/variables';
+@import './utilities/mixin';
+@import './utilities/fonts';
+@import './utilities/utils';
+@import './utilities/grid';
+
+@import './base/base';
+
+@import './component/buttons';
+@import './component/form';
+@import './component/navTab';
+@import './component/pagination';
+@import './component/titles';
+
+@import './helpers/stretched-link';
+@import './helpers/text-truncate';
+@import './helpers/breadcrumb';
+
+
+
+@import './layout/header';
+@import './layout/footer';
+
+
+
+@import './pages/index';
+@import './pages/product';
+@import './pages/stores';
+@import './pages/blog';
+

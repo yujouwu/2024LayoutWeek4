@@ -1,0 +1,11 @@
+.section-title{
+  font-size: $fs-9;
+  font-weight: bold;
+  border-left: 8px solid #9F1213;
+  padding-left: 16px;
+  margin-bottom: 32px;
+  @include sm{
+    font-size: $fs-5;
+    margin-bottom: 24px;
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>門市據點</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <div class="container pt-24 pb-20 py-lg-20 pt-sm-10 pb-sm-16">
+      <h2 class="section-title">門市據點</h2>
+      <div class="d-flex align-items-center mb-10 mb-sm-6">
+        <label for="locations" class="fs-5 me-4 fs-sm-2 me-sm-2">選擇地區</label>
+        <select name="locations" id="locations" class="store-select">
+          <option value="地區搜尋" disabled hidden>地區搜尋</option>
+          <option value="全部地區">全部地區</option>
+          <option value="台北市">台北市</option>
+          <option value="台中市">台中市</option>
+          <option value="高雄市">高雄市</option>
+        </select>
+      </div>
+      <section>
+        <ul class="row row-gap-12 row-gap-sm-6">
+          <%- include('./layout/store-list', {storeImg: 'store-1', storeName: '台北中山旗艦店', storeTel: '(02)000-1234', storeTime: '10:00-21:00', storeAddr: '台北市中山區南京東路25巷2-1號', storeHref:'store-1.html'}); -%>
+          <%- include('./layout/store-list', {storeImg: 'store-2', storeName: '台北綠園店', storeTel: '(02)000-2345', storeTime: '10:00-21:00', storeAddr: '台北市中正區復興南路 132-1 號', storeHref:'#'}); -%>
+          <%- include('./layout/store-list', {storeImg: 'store-3', storeName: '台中清水旗艦店', storeTel: '(02)000-1234', storeTime: '10:00-21:00', storeAddr: '台中市清水區經南一路 23 號 8 樓', storeHref:'#'}); -%>
+          <%- include('./layout/store-list', {storeImg: 'store-4', storeName: '高雄中正形象店', storeTel: '(02)000-2345', storeTime: '10:00-21:00', storeAddr: '高雄市苓雅區中正路 38 號 12 樓', storeHref:'#'}); -%>
+          <%- include('./layout/store-list', {storeImg: 'store-5', storeName: '高雄夢時代店', storeTel: '(02)000-1234', storeTime: '10:00-21:00', storeAddr: '高雄市前鎮區中華一路 63 號 6 樓', storeHref:'#'}); -%>
+        </ul>
+      </section>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

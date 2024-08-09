@@ -1,0 +1,41 @@
+.nav{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-link{
+  &-hover:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+}
+.tab-item{
+  width: 33.3333%;
+  font-weight: bold;
+  font-size: $fs-6;
+  border: 1px solid #DCDCDC;
+  &.active, &:hover {
+    border-bottom: 8px solid $primary-default;
+  }
+  @include lg{
+    font-size: $fs-5;
+  }
+  @include sm{
+    font-size: $fs-2;
+  }
+}
+.tab-link{
+  padding: 24px 16px;
+  width: 100%;
+  cursor: pointer;
+  @include lg{
+    padding: 16px 8px;
+  }
+}
+
+.tab-content{
+  display: none;
+}
+.tab-content.active{
+  display: block;
+}

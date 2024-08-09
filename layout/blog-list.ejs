@@ -1,0 +1,21 @@
+<li class="row">
+  <div class="col-6 col-sm-12">
+    <a href="<%= blogLink %>">
+      <img src="../assets/images/<%= blogImg %>" alt="<%= blogTitle %>">
+    </a>
+  </div>
+  <div class="col-6 col-sm-12">
+    <div class="d-flex flex-column h-100">
+      <h3 class="text-primary-darken fs-6 fs-lg-5"><a class="nav-link-hover" href="<%= blogLink %>"><%= blogTitle %></a></h3>
+      <div class="d-flex justify-content-between align-items-center mb-4 mb-lg-1">
+        <h4 class="fw-bold fs-4 fs-lg-2"><%= blogSubTitle %></h4>
+        <date class="opacity-70"><%= blogDate %></date>
+      </div>
+      <div>
+        <p class="text-secondary-300 fs-4 fs-lg-2 d-lg-none"><%= blogContentLong %></p>
+        <p class="d-none d-lg-block text-secondary-300 fs-4 fs-lg-2 d-sm-none"><a href="<%= blogLink %>"><%= blogContentShort %></a></p>
+      </div>
+      <a class="text-primary-darken fs-7 fw-bolder mt-auto align-self-end nav-link-hover d-lg-none" href="<%= blogLink %>">MORE</a>
+    </div>
+  </div>
+</li>

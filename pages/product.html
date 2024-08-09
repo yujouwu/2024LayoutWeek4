@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>眼鏡官網 - 經典系列 - Optical</title>
+</head>
+
+<body>
+  <!-- header  -->
+  <%- include('./layout/header'); -%>
+  
+  <main>
+    <!-- nav-tab  -->
+    <section class="container container-lg-fluid">
+      <ul class="d-flex mx-lg-n3 text-center">
+        <li class="tab-item active" data-target="#optical">
+          <a class="tab-link" >OPTICAL</a>
+        </li>
+        <li class="tab-item" data-target="#sunglasses">
+          <a class="tab-link" >SUNGLASSES</a>
+        </li>
+        <li class="tab-item" data-target="#functional">
+          <a class="tab-link" >FUNCTIONAL</a>
+        </li>
+      </ul>
+    </section>
+    <!-- section banner  -->
+     <section id="optical" class="tab-content active">
+      <div class="d-flex">
+        <div class="bg-img bg-item bg-optical-left" ></div>
+        <div class="bg-img bg-item bg-optical-right"></div>
+      </div>
+      <div class="container py-20 container-sm-fluid py-sm-10">
+        <div class="text-center">
+          <h4 class="fw-bold fs-8 fs-sm-5">Celluloid Combi</h4>
+          <h5 class="fs-6 mb-8 fs-sm-5 mb-sm-6">賽璐珞鈦金屬混合鏡框</h5>
+        </div>
+        <ul class="row row-gap-20 row-gap-lg-10 row-gap-sm-6">
+          <%- include('./layout/product-list', {col: '3', productImg: '/assets/images/product-1.png', imgAlt: 'product-1', productName: 'BJ41600S', productPrice: '3,490'}); -%>
+          <%- include('./layout/product-list', {col: '3', productImg: '/assets/images/product-2.png', imgAlt: 'product-2', productName: 'BJ41600S', productPrice: '3,490'}); -%>
+          <%- include('./layout/product-list', {col: '3', productImg: '/assets/images/product-3.png', imgAlt: 'product-3', productName: 'BJ41600S', productPrice: '3,490'}); -%>
+          <%- include('./layout/product-list', {col: '3', productImg: '/assets/images/product-4.png', imgAlt: 'product-4', productName: 'BJ41600S', productPrice: '3,490'}); -%>
+          <%- include('./layout/product-list', {col: '3', productImg: '/assets/images/product-5.png', imgAlt: 'product-5', productName: 'BJ41600S', productPrice: '3,490'}); -%>
+          <%- include('./layout/product-list', {col: '3', productImg: '/assets/images/product-6.png', imgAlt: 'product-6', productName: 'BJ41600S', productPrice: '3,490'}); -%>
+          <%- include('./layout/product-list', {col: '3', productImg: '/assets/images/product-7.png', imgAlt: 'product-7', productName: 'BJ41600S', productPrice: '3,490'}); -%>
+          <%- include('./layout/product-list', {col: '3', productImg: '/assets/images/product-8.png', imgAlt: 'product-8', productName: 'BJ41600S', productPrice: '3,490'}); -%>
+          <%- include('./layout/product-list', {col: '3', productImg: '/assets/images/product-9.png', imgAlt: 'product-9', productName: 'BJ41600S', productPrice: '3,490'}); -%>
+          <%- include('./layout/product-list', {col: '3', productImg: '/assets/images/product-10.png', imgAlt: 'product-10', productName: 'BJ41600S', productPrice: '3,490'}); -%>
+          <%- include('./layout/product-list', {col: '3', productImg: '/assets/images/product-11.png', imgAlt: 'product-11', productName: 'BJ41600S', productPrice: '3,490'}); -%>
+          <%- include('./layout/product-list', {col: '3', productImg: '/assets/images/product-12.png', imgAlt: 'product-12', productName: 'BJ41600S', productPrice: '3,490'}); -%>
+        </ul>
+        <!-- pagination  -->
+        <%- include('./layout/pagination'); -%>
+      </div>
+     </section>
+     <!-- sunglasses  -->
+     <section  id="sunglasses" class="tab-content">
+      <div class="d-flex">
+        <div class="bg-img bg-item bg-sunglasses-left" ></div>
+        <div class="bg-img bg-item bg-sunglasses-right"></div>
+      </div>
+      <div class="container py-20 container-sm-fluid">
+        <div class="text-center">
+          <h4 class="fw-bold fs-8 fs-sm-5">2020 NEW COLLECTION</h4>
+          <h5 class="fs-6 mb-8 fs-sm-5 mb-sm-6">賽璐珞鈦金屬混合鏡框</h5>
+        </div>
+        <ul class="row row-gap-20 row-gap-lg-10 row-gap-sm-6">
+          <%- include('./layout/product-list', {col: '4', productImg: '/assets/images/product-7.png', imgAlt: 'product-7', productName: 'BJ41600S', productPrice: '3,490'}); -%>
+          <%- include('./layout/product-list', {col: '4', productImg: '/assets/images/product-8.png', imgAlt: 'product-8', productName: 'BJ41600S', productPrice: '3,490'}); -%>
+          <%- include('./layout/product-list', {col: '4', productImg: '/assets/images/product-9.png', imgAlt: 'product-9', productName: 'BJ41600S', productPrice: '3,490'}); -%>
+          <%- include('./layout/product-list', {col: '4', productImg: '/assets/images/product-10.png', imgAlt: 'product-10', productName: 'BJ41600S', productPrice: '3,490'}); -%>
+          <%- include('./layout/product-list', {col: '4', productImg: '/assets/images/product-11.png', imgAlt: 'product-11', productName: 'BJ41600S', productPrice: '3,490'}); -%>
+          <%- include('./layout/product-list', {col: '4', productImg: '/assets/images/product-12.png', imgAlt: 'product-12', productName: 'BJ41600S', productPrice: '3,490'}); -%>
+        </ul>
+        <!-- pagination  -->
+        <%- include('./layout/pagination'); -%>
+      </div>
+     </section>
+     <!-- FUNCTIONAL  -->
+     <section  id="functional" class="tab-content">
+      <div class="container py-20 container-sm-fluid">
+        <div class="text-center">
+          <h4 class="fw-bold fs-8 fs-sm-5">我是 functional 頁面</h4>
+          <h5 class="fs-6 mb-8 fs-sm-5 mb-sm-6">XXXXXX</h5>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer  -->
+  <%- include('./layout/footer'); -%>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script type="module" src="../main.js"></script>
+</body>
+
+</html>

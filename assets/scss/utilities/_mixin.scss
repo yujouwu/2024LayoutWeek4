@@ -1,0 +1,41 @@
+// RWD 斷點
+@mixin lg {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+@mixin md {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+// 圖片取代文字
+@mixin hideText {
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// grid
+@mixin generate-cols($prefix, $columns-num, $gap) {
+  @for $i from 1 through $columns-num{
+    .#{$prefix}-#{$i} {
+      width: 100% * calc($i / $columns-num);
+      padding-left: calc($gap / 2);
+      padding-right: calc($gap / 2);
+    }
+  }
+}
+@mixin fluid{
+  max-width: 1320px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 0 auto;
+} 
